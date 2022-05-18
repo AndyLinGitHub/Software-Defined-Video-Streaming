@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+service SVDS {
+    rpc Compute(SvdsRequest) returns (SvdsResponse);
+}
+
+message SvdsRequest {
+    string algo = 1;
+}
+
+message SvdsResponse {
+    string res = 1;
+}
