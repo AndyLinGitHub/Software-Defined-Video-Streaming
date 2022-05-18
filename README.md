@@ -7,7 +7,7 @@ In this project, we used the software components learned in the class to build a
 
 ## Architecture
 <p align="center">
-<img src="https://github.com/AndyLinGitHub/Software-Defined-Video-Streaming/blob/main/Architecture.png" width=40% height=40%>
+<img src="https://github.com/AndyLinGitHub/Software-Defined-Video-Streaming/blob/main/Architecture.png" width=100% height=100%>
 </p>
 
 ## Devices
