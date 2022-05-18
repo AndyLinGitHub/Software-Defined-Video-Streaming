@@ -102,3 +102,5 @@ $ python3 client.py --ip 192.168.55.1 --port 8080 --algo fd
 # Terminate the streaming
 $ python3 client.py --ip 192.168.55.1 --port 8080 --algo terminate
 ```
+
+Director: https://github.com/johnnylord
