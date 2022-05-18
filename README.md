@@ -1,3 +1,12 @@
+# Introduction
+## Demo Video
+https://www.youtube.com/watch?v=oNIMCVECFBY
+
+## Devices
+- Local machine
+- [Jetson Nano](https://www.nvidia.com/zh-tw/autonomous-machines/embedded-systems/jetson-nano/)
+- [Raspberry Pi Camera V2](https://www.raspberrypi.com/products/camera-module-v2/)
+
 # Install project dependencies
 ## gRPC-with-protobuf (On Jetson Nano and local machine)
 
