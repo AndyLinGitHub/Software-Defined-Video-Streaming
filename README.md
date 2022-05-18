@@ -65,3 +65,40 @@ $ python3 -c "import mediapipe as mp"
 # Uninstall opencv packages along with the mediapipe. They are precompiled versions and disable gstreamer by default.
 $ cd [site-package folder] $ rm -rf opencv* cv2
 ```
+
+# Usage
+Download codes to your Jetson Nano and local machine
+```bash
+$ git clone https://github.com/AndyLinGitHub/Software-Defined-Video-Streaming
+```
+
+Run the gRPC server on your Jetson Nano
+```bash
+$ python3 server.py --ip 0.0.0.0 --port 8080
+```
+
+Run the following code on your local machine to see the streaming  
+```bash
+$ ffplay -fflags nobuffer rtmp://192.168.55.1/rtmp/live
+```
+
+Run the gRPC client on your local machine to start the streaming and change the video processing algorithm.
+```bash
+# Start the streaming
+$ python3 client.py --ip 192.168.55.1 --port 8080 --algo start
+
+# Apply object detection
+$ python3 client.py --ip 192.168.55.1 --port 8080 --algo od
+
+# Apply hand pose tracking
+$ python3 client.py --ip 192.168.55.1 --port 8080 --algo hpt
+
+# Apply pose estimation
+$ python3 client.py --ip 192.168.55.1 --port 8080 --algo pe
+
+# Apply face detection
+$ python3 client.py --ip 192.168.55.1 --port 8080 --algo fd
+
+# Terminate the streaming
+$ python3 client.py --ip 192.168.55.1 --port 8080 --algo terminate
+```
