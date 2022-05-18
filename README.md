@@ -113,17 +113,21 @@ $ python3 client.py --ip 192.168.55.1 --port 8080 --algo terminate
 	- https://medium.com/@galaktyk01/how-to-build-opencv-with-gstreamer-b11668fa09c
 	- https://forums.developer.nvidia.com/t/unable-to-install-opencv-with-cuda-in-jetson-nano/72994
 
-## Opencv `opening in BLOCKING MODE` Error
-```
-# Look for related python process
-$ ps aux | grep python
+## Opencv blocking mode error
+- problem:
+	- https://forums.developer.nvidia.com/t/cannot-open-gstreamer-pipeline-with-opencv-on-jetson-nano/111478/5
 
-# Kill the process
-$ kill PID
+- solution:
+	```bash
+	# Look for related python process
+	$ ps aux | grep python
 
-# Restart nvargus-daemon
-$ sudo systemctl restart nvargus-daemon
-```
+	# Kill the process
+	$ kill PID
+
+	# Restart nvargus-daemon
+	$ sudo systemctl restart nvargus-daemon
+	```
 
 # References
 - https://github.com/johnnylord/gRPC-with-protobuf
