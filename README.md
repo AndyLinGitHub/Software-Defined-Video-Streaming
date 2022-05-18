@@ -103,4 +103,9 @@ $ python3 client.py --ip 192.168.55.1 --port 8080 --algo fd
 $ python3 client.py --ip 192.168.55.1 --port 8080 --algo terminate
 ```
 
-Director: https://github.com/johnnylord
+# References
+- https://github.com/johnnylord/gRPC-with-protobuf
+- https://gist.github.com/johnnylord/b5f003e62c1f4eb9c6e2ae9567c4f3d0
+- https://google.github.io/mediapipe/solutions/solutions.html
+- https://shengyu7697.github.io/python-opencv-save-video/
+- https://www.dropbox.com/s/5099n7p5s28sjk9/template.py?dl=1
