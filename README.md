@@ -1,6 +1,14 @@
 # Introduction
-## Demo Video
-https://www.youtube.com/watch?v=oNIMCVECFBY
+
+## Overview
+[Demo Video](https://www.youtube.com/watch?v=oNIMCVECFBY)
+
+In this project, we used the software components learned in the class to build an intelligent video streaming application that allows users to change the video processing algorithm applied on the raw streaming video on the fly, and show the processed video content in real-time. The user can send control signal to the jetson nano through gRPC to tell the device to change the underlying video processing algorithm applied on the streaming data. The processed streaming video is streamed to the user’s laptop through RTMP protocol.
+
+## Architecture
+<p align="center">
+<img src="https://github.com/AndyLinGitHub/Software-Defined-Video-Streaming/Architecture.png" width=40% height=40%>
+</p>
 
 ## Devices
 - Local machine
