@@ -103,7 +103,7 @@ $ python3 client.py --ip 192.168.55.1 --port 8080 --algo fd
 $ python3 client.py --ip 192.168.55.1 --port 8080 --algo terminate
 ```
 
-# Error might encounter
+# Possible errors
 ## Opencv gstreamer pipeline not working
 - problem:
 	- https://forums.developer.nvidia.com/t/opencv-gstreamer-pipeline-not-working/198471
